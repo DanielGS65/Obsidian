@@ -1,0 +1,42 @@
+{
+  "multi-column-markdown:insert-multi-column-region": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-plugin-toc:create-toc": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-dynamic-toc:dynamic-toc-insert-command": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-spaced-repetition:srs-cram-flashcards-in-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "0"
+    }
+  ],
+  "obsidian-git:commit": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ]
+}

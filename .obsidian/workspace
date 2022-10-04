@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "2023ff8f9df47f1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "485e1d37f5858197",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "61ab16c623d02bad",
+    "type": "split",
+    "children": [
+      {
+        "id": "464a30177343ec3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5444a8aad595dd62",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2673198b244e037c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#flashcards/Parcial_1",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "46d6e25302c244e7",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 319.5
+  },
+  "right": {
+    "id": "23a9f2d24847ec94",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c8c16d4d25b2b07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c65567d05dd933d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "52665c2517f63a21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "087cf741dbeb1dbe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a5bc992f295a5285",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "9f4396544140c5ee",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9f4396544140c5ee",
+  "lastOpenFiles": [
+    "Universidad/Ingeniería Informática/Programación Concurrente/Conceptos Fundamentales.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Introducción.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_3.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Gestión del Tiempo en STR.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Sistemas en Tiempo Real.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción.md",
+    "Universidad/Otros/Alfonso/Recuento.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_1.md"
+  ]
+}
