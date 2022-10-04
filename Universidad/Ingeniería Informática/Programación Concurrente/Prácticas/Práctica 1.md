@@ -177,5 +177,5 @@ int main(){
 ```ad-question
 title:Apartado c)
 
-Transforma el código anterior para que definamos una única función a la que se le pase como parámetro el valor entero que se desea imprimir. Instancia a continuación dos procesos que ejecuten dicha función a la que le pasaremos como parámetro un `1` y un `2` respectivamente.
+Transforma el código anterior para que definamos una única función a la que se le pase como parámetro el valor entero que se desea imprimir. Instancia a continuación dos procesos que ejecuten dicha función a la que le pasaremos como parámetro un `1` y un `2` respectivamente.a
 ```

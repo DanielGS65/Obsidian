@@ -7,8 +7,12 @@
         "id": "485e1d37f5858197",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md"
+              }
             }
           },
           {
@@ -129,8 +137,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9f4396544140c5ee",
+  "active": "485e1d37f5858197",
   "lastOpenFiles": [
+    "Universidad/Cursos de Formación/Fechas.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Conceptos Fundamentales.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Introducción.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
@@ -139,7 +148,6 @@
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Gestión del Tiempo en STR.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Sistemas en Tiempo Real.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción.md",
-    "Universidad/Otros/Alfonso/Recuento.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_1.md"
+    "Universidad/Otros/Alfonso/Recuento.md"
   ]
 }
