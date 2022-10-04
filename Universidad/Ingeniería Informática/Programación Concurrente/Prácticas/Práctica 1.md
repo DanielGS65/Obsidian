@@ -10,11 +10,11 @@ varied_style: true
 
 <p style="font-weight: bold; font-size: 20 ">Progreso</p>
 
-- [ ] Procesos en Unix/C
+- [x] Procesos en Unix/C
 	- [x] a)
 	- [x] b)
-	- [ ] c)
-	- [ ] d)
+	- [x] c)
+	- [x] d)
 - [ ] Hilos POSIX
 	- [ ] a)
 	- [ ] b)
@@ -177,5 +177,149 @@ int main(){
 ```ad-question
 title:Apartado c)
 
-Transforma el código anterior para que definamos una única función a la que se le pase como parámetro el valor entero que se desea imprimir. Instancia a continuación dos procesos que ejecuten dicha función a la que le pasaremos como parámetro un `1` y un `2` respectivamente.a
+Transforma el código anterior para que definamos una única función a la que se le pase como parámetro el valor entero que se desea imprimir. Instancia a continuación dos procesos que ejecuten dicha función a la que le pasaremos como parámetro un `1` y un `2` respectivamente.
+```
+
+``` C
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+void printP(int num){
+    printf("%d \n",num);
+}
+
+int main(){
+
+    int pid;
+    int A = 1;
+    int B = 2;
+
+    pid = fork();
+
+    if(pid == 0){
+        printP(B);
+    }
+    else if(pid == -1){
+        printf("\n Warning: An ERROR has ocurred at creating a new process");
+    }
+    else{
+        printP(A);
+    }
+
+    return 0;
+}
+```
+
+```ad-question
+title: Apartado d)
+
+Implementa un programa que contenga una función imprimir que imprima un carácter cualquiera `5` veces. En el programa principal debemos crear `3` procesos concurrentes que impriman, utilizando la función imprimir, una ’A’, una ’B’ y una ’C’ respectivamente.
+```
+
+``` C
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+void printP(int C){
+    for(int i=0;i<5;i++){
+        printf("%c",C);
+    }
+    printf("\n");
+}
+
+int main(){
+
+    int pid;
+    char A = 'A';
+    char B = 'B';
+    char C = 'C';
+
+    pid = fork();
+
+    if(pid == 0){
+        pid = fork();
+        if(pid != 0){
+            printP(B);
+        }
+        else if(pid == -1){
+        printf("\n Warning: An ERROR has ocurred at creating a new process");
+        }
+        else{
+            printP(C);
+        }
+    }
+    else if(pid == -1){
+        printf("\n Warning: An ERROR has ocurred at creating a new process");
+    }
+    else{
+        printP(A);
+    }
+    return 0;
+}
+```
+
+## Hilos POSIX
+
+```ad-info
+title:Enunciado
+collapse: open
+
+Estudia el siguiente programa:
+``` C
+
+/*
+ * hilos
+ * Compilación: cc -o hilos hilos.c -lpthread
+ */
+
+#include <pthread.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define NUM_HILOS 5
+
+int I = 0;
+
+void *codigo_del_hilo (void *id){
+   int i;
+   for( i = 0; i < 50; i++)
+      printf("Hilo %d: i = %d, I = %d\n", *(int *)id, i, I++);
+   pthread_exit (id);
+}
+
+int main(){
+   int h;
+   pthread_t hilos[NUM_HILOS];
+   int id[NUM_HILOS] = {1,2,3,4,5};
+   int error;
+   int *salida;
+
+   for(h = 0; h < NUM_HILOS; h++){
+      error = pthread_create( &hilos[h], NULL, codigo_del_hilo, &id[h]);
+      if (error){
+        fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+        exit(-1);
+      }
+   }
+   for(h =0; h < NUM_HILOS; h++){
+      error = pthread_join(hilos[h], (void **)&salida);
+      if (error)
+         fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+      else
+         printf ("Hilo %d terminado\n", *salida);
+   }
+}
+```
+
+```ad-question
+title: Apartado a)
+
+Comenta qué se espera que ocurra en cada porción de código y la salida. Comenta a continuación las diferencias más importantes entre este programa y el equivalente con procesos de la sesión `1`.
 ```
