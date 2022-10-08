@@ -1,6 +1,6 @@
 #flashcards/Parcial_1
 
-==Presiona Ctrl+0 para revisar las cartas==
+==Presiona Ctrl + num_0 para revisar las cartas==
 
 %%Teoría%%
 ```ad-question
@@ -75,14 +75,128 @@ Las tareas no Anónimas tienen dos tipos que cambian el momento de invocación.
 ```ad-question
 title: Pregunta
 
-**Cita** y **Describe** las **caracteristicas principales de un Sistema en Tiempo Real**.
+**Cita** y **Describe** las **características principales de un Sistema en Tiempo Real**.
 ```
 ?
 ```ad-info
 title: Respuesta
 
-La caracteristica mas importante en un STR es la **Concurrecia**
+La característica mas importante en un STR es la **Concurrencia** ya que esta la concurrencia es inherente en los sistemas STR.
+
+Otra característica muy importante es la **Dependencia en el tiempo**, ya que en un STR es necesario que las tareas se terminen antes de que se agote su plazo '*deadline*'.
+
+Por último necesitan ser **Fiables** (Tener una alta probabilidad de proporcionar el servicio requerido) y **Seguros** (Tener una alta probabilidad de recuperarse en caso de error).
 ```
+<!--SR:!2022-10-12,4,274-->
+
+```ad-question
+title: Pregunta
+
+Nombra los **Tipos de Sistemas en Tiempo Real**.
+```
+?
+```ad-info
+title: Respuesta
+
+La **clasificación** de los STR se hacen **sobre dos Factores**, por su **Criticidad** y por su **Instante de Activación**.
+
+- Por su **Criticidad**:
+	- **Hard Real Time**
+		- Todas las acciones son críticas.
+	- **Soft Real Time**:
+		- Se puede perder plazos
+		- La utilidad del tiempo decrece con el tiempo.
+	- **Firm Real Time**:
+		- Se puede perder plazos
+		- Una respuesta tardía no tiene valor. 
+
+- Según el **Instante de Activación de las Tareas**:
+	- Los **instantes de activación** pueden ser dirigidos por:
+		- Eventos (Inicio en instantes predeterminados)
+		- Tiempo (Inicio cuando se produce un suceso de cambio de estado)
+	- **Esquemas de activación**:
+		- **Periódica** : Se ejecuta con un periodo (en ciclos)
+		- **Aperiódica**: Se ejecuta de manera irregular, responde a estímulos.
+		- **Esporádica**: Debe tener una separación entre activaciones.
+```
+<!--SR:!2022-10-11,3,254-->
+
+```ad-question
+title: Pregunta
+
+Cita las **Arquitecturas Software** que se pueden dar en un **Sistema en Tiempo Real**.
+```
+?
+```ad-info
+title: Respuesta
+
+**Ejecutivo Cíclico**: Un único programa de ejecución secuencial con un bucle de control.    
+- Las lecturas se hacen con la misma frecuencia.
+- Ineficaz ante restricciones temporales.
+- Mientras se realiza una tarea, las anteriores no están activas.
+- Si algún elemento falla, todo el programa fallará.
+
+**Sistema Operativo en Tiempo Real**: Programas separados o procedimientos distintos en varios programas secuenciales.
+- A veces no queda claro que son actividades concurrentes o procedimientos.
+
+**Lenguaje de Programación en Tiempo Real**: Un solo programa que tenga concurrencia  
+- Tipos:
+    - **Ensamblador**: Eficiente pero Costoso.
+    - **Secuencial**: Necesitan un S.O.
+    - **Concurrente**: Incluido en el lenguaje.
+```
+<!--SR:!2022-10-09,1,236-->
+
+```ad-question
+title: Pregunta
+
+Cita los **Requerimientos** de un **Sistema en Tiempo Real**.
+```
+?
+```ad-info
+title: Respuesta
+
+__Interacción con el Tiempo__
+- Medir el paso del tiempo.
+- Retrasar ejecución de tareas.
+- Programación con esperas (_Timeouts_).
+- Ejecutar acciones en determinados instantes.
+
+__Representación de requerimientos temporales__
+- Periodos de activación
+- Plazos de ejecución (_deadlines_)
+
+__Satisfacción de requerimientos temporales__
+- _Scheduling_
+```
+<!--SR:!2022-10-12,4,275-->
+
+```ad-question
+title: Pregunta
+
+Cita las **Diferencias** entre las librerias **Ada.Real_Time** y **Ada.Calendar**.
+```
+?
+```ad-info
+title: Respuesta
+
+Ada.Real_Time **ofrece una mayor precisión** frente a Ada.Calendar, además, este ofrece los resultados en un **valor único** y no en una fecha.
+```
+<!--SR:!2022-10-12,4,276-->
+
+```ad-question
+title: Pregunta
+
+Nombra los **Tipos de Retardos** en un **Sistema de Tiempo Real**.
+```
+?
+```ad-info
+title: Respuesta
+
+**Relativo** => Ejecución se suspende durante un intervalo de tiempo relativo al instante actual
+**Absoluto** => Ejecución se suspende hasta que llegue a un instante determinado de tiempo absoluto
+```
+<!--SR:!2022-10-12,4,276-->
 
 %%Práctica%%
 ```ad-question
@@ -104,6 +218,7 @@ title: Respuesta
 
 No, no sería correcto debido a que la instrucción delay esperará 5 segundos además de tener que esperar la ejecución de la función a la que llama. Debería usarse la instrucción _delay until_.
 ```
+<!--SR:!2022-10-12,4,274-->
 
 
 

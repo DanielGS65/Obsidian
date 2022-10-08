@@ -4,37 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f0e3bc61bb84ffd9",
-        "type": "split",
-        "children": [
-          {
-            "id": "9ee312159d6e8209",
-            "type": "leaf",
-            "dimension": 49.925925925925924,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f92a9b6e609ae2bb",
-            "type": "leaf",
-            "dimension": 50.07407407407407,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción a Lenguaje ADA.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
+        "id": "9ee312159d6e8209",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -160,15 +139,15 @@
   },
   "active": "9ee312159d6e8209",
   "lastOpenFiles": [
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Gestión del Tiempo en STR.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción a los Sistemas de Tiempo Real.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción a Lenguaje ADA.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Sistemas en Tiempo Real.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_3.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_2.md",
     "Universidad/Cursos de Formación/Competencias en información digital CID básico/Entregable 1.md",
     "Universidad/Cursos de Formación/Competencias en información digital CID básico/Untitled 1.md",
-    "Universidad/Cursos de Formación/Fechas.md",
-    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md"
+    "Universidad/Cursos de Formación/Fechas.md"
   ]
 }
