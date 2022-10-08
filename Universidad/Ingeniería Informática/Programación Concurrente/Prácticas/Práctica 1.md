@@ -139,7 +139,7 @@ int main() {
 }
 ```
 
-WEXITSTATUS devolverá una evaluación de la finalización del proceso hijo perteneciente al proceso en el cual se ejecuta esta instrucción. Esta instrucción es una ==_macro_ de C==.
+_WEXITSTATUS_ devolverá una evaluación de la finalización del proceso hijo perteneciente al proceso en el cual se ejecuta esta instrucción. Esta instrucción es una ==_macro_ de __C__==.
 
 ```ad-question
 title:Apartado b)
@@ -323,3 +323,4 @@ title: Apartado a)
 
 Comenta qué se espera que ocurra en cada porción de código y la salida. Comenta a continuación las diferencias más importantes entre este programa y el equivalente con procesos de la sesión `1`.
 ```
+
