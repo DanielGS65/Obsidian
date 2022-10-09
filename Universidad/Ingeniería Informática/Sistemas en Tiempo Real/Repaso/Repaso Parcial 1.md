@@ -220,6 +220,10 @@ No, no sería correcto debido a que la instrucción delay esperará 5 segundos a
 ```
 <!--SR:!2022-10-12,4,274-->
 
+```ad-question
+title: 
+```
+
 
 
 

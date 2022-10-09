@@ -1,4 +1,4 @@
-<center style="font-weight: bold; font-size: 25 ">Práctica 2</center>
+<center style="font-weight: bold; font-size: 25 ">Práctica 3</center>
 
 ```toc
 title: "## Índice"
