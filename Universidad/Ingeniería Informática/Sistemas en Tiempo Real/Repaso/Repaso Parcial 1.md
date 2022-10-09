@@ -145,7 +145,7 @@ title: Respuesta
     - **Secuencial**: Necesitan un S.O.
     - **Concurrente**: Incluido en el lenguaje.
 ```
-<!--SR:!2022-10-09,1,236-->
+<!--SR:!2022-10-12,3,256-->
 
 ```ad-question
 title: Pregunta
@@ -221,8 +221,73 @@ No, no sería correcto debido a que la instrucción delay esperará 5 segundos a
 <!--SR:!2022-10-12,4,274-->
 
 ```ad-question
-title: 
+title: Pregunta
+
+Se nos pide hacer una tarea Anonima que realize la suma continua de un numero (num + 1) y que este cree otra tarea que imprima este número por pantalla.
+
+Después de calcular cada numero la tarea esperará un segundo.
+
+Escribe el codigo necesario paar realizar este sistema.
 ```
+?
+```ad-info
+title: Respuesta
+
+El código necesario sería el siguiente:
+```
+``` ADA
+-- pkg_task.ads
+
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; USE Ada.Integer_Text_IO;  
+
+package pkg_task is
+
+	task sumNum;
+	task type printNum(num:Integer);
+	type ptr_printNum is access printNum;
+	 
+end pkg_task;
+
+-- pkg_task.adb
+
+package body pkg_task is
+	
+	task body sumNum is
+	
+		num:Integer := 0;
+		tarea : ptr_printNum;
+
+	begin
+		loop
+			num := num + 1;
+			tarea := new printNum(num);
+			delay(1.0);
+		end loop;
+	end sumNum;
+
+	task body printNum is
+	
+	begin
+	
+		Put(num);
+		Put_Line("");
+	
+	end printNum;
+
+end pkg_task;
+
+-- main.adb
+
+with pkg_task;
+
+procedure main is
+begin
+	null:
+end main;
+```
+<!--SR:!2022-10-12,3,258-->
+
 
 
 

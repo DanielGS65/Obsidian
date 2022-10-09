@@ -33,26 +33,20 @@
   ],
   "obsidian-git:commit": [
     {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "S"
+      "modifiers": [],
+      "key": "F5"
     }
   ],
   "obsidian-git:push2": [
     {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "P"
+      "modifiers": [],
+      "key": "F6"
     }
   ],
   "obsidian-git:pull": [
     {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "O"
+      "modifiers": [],
+      "key": "F7"
     }
   ]
 }
