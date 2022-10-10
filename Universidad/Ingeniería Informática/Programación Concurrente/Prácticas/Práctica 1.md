@@ -323,4 +323,61 @@ title: Apartado a)
 
 Comenta qué se espera que ocurra en cada porción de código y la salida. Comenta a continuación las diferencias más importantes entre este programa y el equivalente con procesos de la sesión `1`.
 ```
+``` C
+/*
+ * hilos
+ * Compilación: cc -o hilos hilos.c -lpthread
+ */
 
+#include <pthread.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define NUM_HILOS 5
+
+int I = 0;
+
+void *codigo_del_hilo (void *id){
+   int i;
+   //blucle que muestra los valores del 0 al 49.
+   for( i = 0; i < 50; i++)
+      printf("Hilo %d: i = %d, I = %d\n", *(int *)id, i, I++);
+   //Termina el thread.
+   pthread_exit (id);
+}
+
+int main(){
+   int h;
+   // creación de los hilos
+   pthread_t hilos[NUM_HILOS];
+   //Id de los hilos
+   int id[NUM_HILOS] = {1,2,3,4,5};
+   int error;
+   int *salida;
+   //Bucle que recorre todos los hilos creados
+   for(h = 0; h < NUM_HILOS; h++){
+	  //Ejecuta uno de los hilos con ejecutando el codigo de la funcion 'codigo_del_hilo', ademas guarda en codigo de error para comprobar si ha fallado.
+      error = pthread_create( &hilos[h], NULL, codigo_del_hilo, &id[h]);
+      if (error){
+        fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+        exit(-1);
+      }
+   }
+   //Bucle que recorre todos los hilos creados
+   for(h =0; h < NUM_HILOS; h++){
+	  //Espera que el hilo termine y recupera la salida y el codigo de error.
+      error = pthread_join(hilos[h], (void **)&salida);
+      if (error)
+         fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+      else
+         printf ("Hilo %d terminado\n", *salida);
+   }
+}
+```
+
+```ad-question
+title: Apartado b)
+
+
+```
