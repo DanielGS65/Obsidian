@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
-            "mode": "source",
+            "file": "Universidad/Otros/Alfonso/Recuento.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 319.5,
+    "collapsed": true
   },
   "right": {
     "id": "23a9f2d24847ec94",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md"
+                "file": "Universidad/Otros/Alfonso/Recuento.md"
               }
             }
           },
@@ -139,8 +140,8 @@
   },
   "active": "9ee312159d6e8209",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+    "conflict-files-obsidian-git.md",
     "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Introducción.md",
     "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Domótica y Entornos Inteligentes.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/ADA Cheatsheet.md",

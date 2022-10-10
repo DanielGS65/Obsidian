@@ -16,12 +16,13 @@ Minimización: 2 hora 55 Minutos
 
 Tiempo Minimizado aplicando la técnica de la ausencia**
 
- - No Falta => 4 | Falta => 3
+ - No Falta => 4 | Falta => 4
 	- 19-09-2022 -> 17:00
 	- 26-09-2022 -> 17:00
 	- 03-10-2022 -> 9:00 - 17:00
+	- 10-10-2022 -> 17:00
 
-Minimización: 8 Horas
+Minimización: 10 Horas
 
 -----------------------------------------
 
@@ -32,9 +33,9 @@ type: line
 labels: [12,13,19,20,26,27,03,04,10]
 series:
   - title: Minimización
-    data: [30,0,135,20,150,35,240,30,15]
+    data: [30,0,135,20,150,35,240,30,135]
   - title: Horario
-	data: [480,480,480,480,480,480,480,480,480]
+	data: [480,360,480,480,480,480,480,480,480]
 tension: 0.2
 width: 80%
 labelColors: false
@@ -42,11 +43,11 @@ fill: true
 beginAtZero: true
 ```
 
-Minimización Total: **10 Horas 55 Minutos**
+Minimización Total: **12 Horas 55 Minutos**
 
-Horas totales: **64 Horas**
+Horas totales: **70 Horas**
 
-Porcentaje de minimización: **16,67%**
+Porcentaje de minimización: **18,45%**
 
 
 ## APUESTAS
