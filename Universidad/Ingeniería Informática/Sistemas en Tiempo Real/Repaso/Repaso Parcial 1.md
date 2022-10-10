@@ -187,7 +187,7 @@ Ada.Real_Time **ofrece una mayor precisión** frente a Ada.Calendar, además, es
 ```ad-question
 title: Pregunta
 
-Nombra los **Tipos de Retardos** en un **Sistema de Tiempo Real**.
+Nombra los **Tipos de Retardos** en un **Sistema de Tiempo Real**.a
 ```
 ?
 ```ad-info
