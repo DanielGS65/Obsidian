@@ -15,9 +15,9 @@ varied_style: true
 	- [x] b)
 	- [x] c)
 	- [x] d)
-- [ ] Hilos POSIX
-	- [ ] a)
-	- [ ] b)
+- [x] Hilos POSIX
+	- [x] a)
+	- [x] b)
 
 ## Procesos en Unix/C
 
@@ -376,8 +376,71 @@ int main(){
 }
 ```
 
+```ad-info
+title: Diferencias entre Hilo y Proceso
+
+**Definiciones**:
+
+**Procesos**:
+- 'Un proceso es una entidad de ejecución independiente, donde, el sistema operativo, en el momento en que el proceso se lanza, proporciona un espacio de direcciones de memoria en los que el proceso puede ejecutarse.'
+
+**Hilos**:
+- 'Los hilos son entidades de ejecución independiente que viven dentro de los procesos y, por tanto, viven dentro del mismo espacio de direcciones de memoria que otros hilos, lo que permite acceder a cualquier dato dentro del mismo proceso.'
+
+**Diferencias**:
+
+La gran diferencia entre los hilos y los procesos es que los hilos se localizan dentro de un proceso, lo que nos indica que la memoria que usan es la propia memoria del proceso, por lo que, la memoria que se usa en los hilos en memoria compartida.
+```
+
 ```ad-question
 title: Apartado b)
 
+Implementa un programa que contenga una función imprimir que imprima un carácter `n` veces. A la función se le debe pasar como parámetro una estructura en la que deben ir encapsulados el carácter y `n`.
 
+En el programa principal debemos crear `3` hilos concurrentes que impriman una ’A’ `50` veces, una ’B’ `100` veces y una ’C’ `150` veces respectivamente.
+```
+
+``` C
+#include <pthread.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct Print{
+  int Max;
+  char C;
+};
+
+void *codigo_del_hilo (void *id){
+   int i;
+   struct Print structPrint = *(struct Print*)id;
+   for( i = 0; i < structPrint.Max; i++){
+      printf("%c",structPrint.C);
+   }
+   printf("\n");   
+   pthread_exit (id);
+}
+
+int main(){
+
+    pthread_t hilos[3];
+    int error;
+    int *salida;
+    struct Print id[3] = {{50,'A'},{100,'B'},{150,'C'}};
+
+    for(int h = 0; h < 3; h++){
+      error = pthread_create( &hilos[h], NULL, codigo_del_hilo, &id[h]);
+      if (error){
+        fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+        exit(-1);
+      }
+    }
+    for(int h =0; h < 3; h++){
+      error = pthread_join(hilos[h], (void **)&salida);
+      if (error)
+         fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+      else
+         printf ("Hilo %d terminado\n", *salida);
+    }
+}
 ```
