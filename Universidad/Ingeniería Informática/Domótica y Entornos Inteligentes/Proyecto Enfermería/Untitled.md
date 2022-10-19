@@ -1,0 +1,20 @@
+- Horario
+	- Muestreo de Horario
+		- Turno
+		- Horas
+		- Planta
+		- Pacientes
+	- Asignación Automática de Personal
+		- Enfermeros
+		- Auxiliares
+- Perfil de Empleado
+	- Estadísticas laborales
+		- Días Libres
+		- Días Laborales
+		- Turnos Realizados
+	 - Asignación de Días Libres
+	 - Creación de Peticiones
+- Gestión
+	- Gestión de Horarios
+	- Lista de Personal
+	- Buzón de Mensajería

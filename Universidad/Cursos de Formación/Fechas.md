@@ -23,11 +23,13 @@ Link: [Pagina de cursos formativos de la Universidad de Alicante](https://web.ua
 	- Inscripción -> 11/10/2022
 	- Realización -> 20/10/2022 hasta 03/11/2022
 	- Valor -> 1 crédito.
+	- Código -> ZWPBWPEY46
 
 **Competencias en Información Digital CID Intermedio Fundamentos de la Arquitectura**
 	- Inscripción -> 11/10/2022
 	- Realización -> 20/10/2022 hasta 03/11/2022
 	- Valor -> 1 crédito.
+	- Código -> MITNVAVO58
 
 **Competencias en Información Digital CID Intermedio Economía**
 	- Inscripción -> 27/10/2022

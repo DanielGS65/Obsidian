@@ -6,3 +6,4 @@
 - Sesión 1 y 2 : [[Introducción a Lenguaje ADA]]
 - Sesión 3: [[Introducción a los Sistemas de Tiempo Real]]
 - Sesión 4: [[Gestión del Tiempo en STR]]
+- Sesión 5: [[Comunicación y Sincronización de Tareas]]
