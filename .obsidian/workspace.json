@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md"
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md"
               }
             }
           },
@@ -150,15 +150,15 @@
   },
   "active": "695ab5871b0dfd27",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/Información de Proyecto.md",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/img/Pasted image 20221018235641.png",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/img/Pasted image 20221018230501.png",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/Untitled.md",
-    "Pasted image 20221018230225.png",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Ámbito de la Domótica y los Entornos Inteligentes.md",
-    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 1.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_3.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/img/BBDD.png",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/img/Pasted image 20221018235641.png",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Untitled.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md",
-    "Universidad/Otros/Alfonso/Recuento.md",
-    "Universidad/Ingeniería Informática/Programación Concurrente/Conceptos Fundamentales.md"
+    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/img/Pasted image 20221018230501.png",
+    "Pasted image 20221018230225.png",
+    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Ámbito de la Domótica y los Entornos Inteligentes.md"
   ]
 }
