@@ -3,5 +3,9 @@
 ### Primer Bloque ###
 
 - [[Universidad/Ingeniería Informática/Sistemas Industriales/Introducción|Introducción]]
-- Sesión 1 - 2 (Teoría): [[Introducción a la Industria 4.0]]
-- Sesión 1 - 2 (Prácticas): [[Capturar datos de OpenWeather]]
+- Sesión 1 - 2 : [[Capturar_Datos_OpenWeather]]
+- Sesión 3 : [[Control_Dashboard]]
+- Sesión 4 : [[Control_y_Consumo]]
+- Sesión 5 : [[Mensajería_MQTT]]
+- Sesión 6 : [[Ubidots]]
+

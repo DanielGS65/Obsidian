@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "07a665df09c8dd73",
+        "id": "1fdc0514a8aae3ba",
         "type": "tabs",
         "children": [
           {
-            "id": "695ab5871b0dfd27",
+            "id": "e14431b362b1ec1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2136c9ea5f2b091",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md"
+                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md"
               }
             }
           },
@@ -145,20 +158,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "695ab5871b0dfd27",
+  "active": "c2136c9ea5f2b091",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_3.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/img/BBDD.png",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/img/Pasted image 20221018235641.png",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Untitled.md",
-    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica 2.md",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Proyecto Enfermería/img/Pasted image 20221018230501.png",
-    "Pasted image 20221018230225.png",
-    "Universidad/Ingeniería Informática/Domótica y Entornos Inteligentes/Ámbito de la Domótica y los Entornos Inteligentes.md"
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Sistemas Industriales.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Memoria_Bloque_1.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Introducción.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Ubidots.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_y_Consumo.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_Dashboard.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Capturar_Datos_OpenWeather.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Introducción a la Industria 4.0.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/img_MQTT/Pasted image 20221031164344.png"
   ]
 }

@@ -1,6 +1,7 @@
 <center style="font-weight: bold; font-size: 25 ">Comunicación y Sincronización de Tareas</center>
 
-[[Práctica_4| Ir a la práctica(Sesión 5)]]
+[[Práctica_4|Ir a la práctica(Sesión 5)]]
+[[Práctica_5|Ir a la práctica(Sesión 6)]]
 
 ```toc
 title: "## Índice"
@@ -128,5 +129,117 @@ En los _entry_ tenemos el atributo '_count_' que  nos indica el número de tarea
 - _Select_ then _abort_
 	- Si la barrera es falsa se ejecutará la sección _then abort_ mientras se espera. Si termina la ejecución del _abort_ y no se entra se omitiría, si entra antes del _abort_ este para su ejecución.
 	
+
+## Paso de Mensajes
+
+Los **procesos se pueden comunicar y sincronizar mediante mensajes**.
+
+### Modelo de Sincronización
+
+- **Sincronización implícita**
+	- El proceso receptor no puede obtener un mensaje antes de que dicho mensaje haya sido enviado
+- **Sincronización en función de la semántica de la operación enviar** (_send_) : 
+	- Asíncrona
+		- El emisor continúa su ejecución independientemente de si se ha recibido o no el mensaje
+		- Se requiere un búfer para almacenar los mensajes
+			- Capacidad potencialmente ilimitada
+			- Si es limitado, puede bloquearse el emisor
+	- Síncrona
+		- El emisor continúa sólo cuando se ha recibido el mensaje
+		- No es necesario un búfer
+		- En ADA usamos la **Invocación remota**
+			- El emisor continúa sólo cuando se ha devuelto una respuesta desde el receptor
+			- Se conoce como cita extendida (**_extended rendezvous_**)
+
+### Identificación de procesos
+
+- **Identificación directa o indirecta**
+	- **Directa**
+		- El emisor identifica explícitamente el receptor
+		- Tiene la ventaja de su simplicidad
+	- **Indirecta**
+		- Se utiliza una entidad intermediaria (Canal, buzón de correo, tubería, etc)
+		- Facilita la descomposición del software
+- **Identificación simétrica o asimétrica**
+	- **Simétrica**
+		- El emisor y el receptor se pueden identificar entre sí.
+	- **Asimétrica**
+		- El receptor no identifica un origen específico, sino que acepta mensajes de cualquier emisor (proceso o buzón)
+
+## Cita Extendida en ADA
+
+```ad-info
+title: Caracteristicas de la Cita Extendida
+
+- Modelo de sincronización : Cita extendida (extended rendezvous)  
+	- La tarea que llega primero espera a la otra  
+	- Las tareas esperan a la respuesta  
+- Intercambio de información mediante parámetros  
+- Se proporciona exclusión mutua  
+	- Una tarea no puede mantener varias citas a la vez. Después de responder a una cita, se puede establecer la siguiente.  
+- La cita está basada en el modelo cliente/servidor  
+	- El servidor declara un conjunto de servicios que se ofrecen a otras tareas (sus clientes)
+```
+
+### Entry
+
+Para que una tarea pueda recibir un mensaje, debe tener definido un _entry_ (entrada).
+
+Cada _entry_ indica el nombre del servicio, los parámetros necesarios para la petición y los resultados que devolverá.
+
+La tarea que realiza la llamada "conoce" a la tarea a la que "llama"
+
+```ad-tip
+title: Información
+
+El _entry_ también contiene un atributo _Count_.
+```
+
+```ad-info
+title:Espera selectiva en el cliente
+
+**La sentencia Select...llamada_entry permite al cliente:**  
+- No esperar si el servidor no está disponible inmediatamente para establecer la cita (**else**)  
+- Dejar de esperar si el servidor no ha llegado a la cita en un tiempo especificado (**or delay**)  
+- Abortar la ejecución de acciones que se han estado realizando durante la espera (**then abort**)
+```
+
+### Accept
+
+Para que una tarea pueda servir un mensaje, debe tener definido un _accept_  
+
+La sentencia _accept_ permite al servidor atender una petición de servicio (llamada a un _entry_)  
+
+La tarea que sirve la petición no "conoce" a la tarea que manda el mensaje
+
+```ad-warning
+title: Restricciones del _Accept_
+
+- Puede colocarse únicamente en el cuerpo de una tarea  
+- Se pueden anidar, aunque no para el mismo entry  
+- Debería haber al menos un accept por cada entry
+```
+
+```ad-bug
+title: Manejo de Excepciones en un Accept
+
+Si no se maneja dentro del accept la excepción se lanza en la tarea invocadora y en la receptora de tipo **TASKING_ERROR**
+
+La excepción **TASKING_ERROR** se puede generar cuando:  
+• Se realiza una llamada a un entry de una tarea que no está activa  
+• Se está encolado en un entry de una tarea que termina
+```
+
+```ad-info
+title: Espera Selectiva en Servidor
+
+La sentencia **_Select...accept_** permite:
+
+- Esperar a más de una cita a la vez (**or accept**)  
+- Retirar la oferta de comunicación si ninguna cita está disponible inmediatamente (**else**)  
+- Detener la espera si ninguna cita ha llegado en un tiempo especificado (**or delay**)  
+- Terminar si no hay clientes que puedan llamar a sus entradas (**or terminate**) se suele hacer cuando la tarea es innecesaria
+
+```
 
 [^1]: Tiene que estar dentro de una unidad de compilación, es decir, necesita estar en un _pakage_.

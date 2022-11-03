@@ -53,9 +53,9 @@ Las resticiones que el programa deberá tener en cuenta son las siguientes:
 	- **Turno de Tarde** -> Duración: 7 Horas
 	- **Turno de Noche** -> Duración 10 Horas
 - Cada empleado se le debe **asignar un turno de manera rotatoria** (Dia->Tarde->Noche)
-- **No se puede superar las 36 Horas Semanales**
+- **No se puede superar las 36 Horas Semanales/160 Horas Mensuales/1151 Horas Anuales**
  ```
-
+ 
 ##### - Muestreo del Horario
 
 Se necesita mostrar el horario de manera clara, indicando el turno al que se debe asistir, la planta a la que se le asigna y una lista de los pacientes a tratar.

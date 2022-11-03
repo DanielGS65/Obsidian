@@ -2,7 +2,7 @@
 
 **Tiempo minimizado usando la técnica del retraso**
 
-- Sin retraso => 3 | Retraso => 9
+- Sin retraso => 3 | Retraso => 11
 
 	- 12-09-2022 -> 9:30
 	- 19-09-2022 -> 9:15
@@ -13,17 +13,20 @@
 	- 10-10-2022 -> 9:15
 	- 11-10-2022 -> 9:15
 	- 17-10-2022 -> 11:15
+	- 24-10-2022 -> 11:40
+	- 25-10-2022 -> 9:15
 
-Minimización: 3 hora 20 Minutos
+Minimización: 4 hora 15 Minutos
 
 Tiempo Minimizado aplicando la técnica de la ausencia**
 
- - No Falta => 5 | Falta => 5
+ - No Falta => 6 | Falta => 6
 	- 19-09-2022 -> 17:00
 	- 26-09-2022 -> 17:00
 	- 03-10-2022 -> 9:00 - 17:00
 	- 10-10-2022 -> 17:00
 	- 17-10-2022 -> 9:00 - 17:00
+	- 24-10-2022 -> 9:00
 
 Minimización: 14 Horas
 
@@ -33,12 +36,12 @@ Minimización: 14 Horas
 
 ```chart
 type: line
-labels: [12,13,19,20,26,27,03,04,10,11,17,18]
+labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25]
 series:
   - title: Minimización
-    data: [30,0,135,20,150,35,240,30,135,15,255,0]
+    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15]
   - title: Horario
-	data: [480,360,480,480,480,120,480,480,480,480, 480, 480]
+	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480]
 tension: 0.2
 width: 80%
 labelColors: false
@@ -46,11 +49,11 @@ fill: true
 beginAtZero: true
 ```
 
-Minimización Total: **17 Horas 20 Minutos**
+Minimización Total: **18 Horas 15 Minutos**
 
-Horas totales: **90 Horas**
+Horas totales: **106 Horas**
 
-Porcentaje de minimización: **20,63%**
+Porcentaje de minimización: **17,22%**
 
 
 ## APUESTAS
