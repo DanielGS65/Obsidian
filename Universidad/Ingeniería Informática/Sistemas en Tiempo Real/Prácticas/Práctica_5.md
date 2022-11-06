@@ -307,7 +307,7 @@ Si se lee desde un PDF, el video esta en github en la misma carpeta que el PDF.
 El PDF no admite videos.
 ```
 
-![[2022-11-06 16-48-49.mkv]]
+![[Practica_5_Result.mkv]]
 
 <center style="font-weight: bold; font-size: 20 ">Salida por Consola</center>
 
