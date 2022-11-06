@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
-                "mode": "preview",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md"
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md"
               }
             }
           },
@@ -160,15 +160,15 @@
   },
   "active": "c2136c9ea5f2b091",
   "lastOpenFiles": [
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/2022-11-06 16-48-49.mkv",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Sistemas Industriales.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Memoria_Bloque_1.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Introducción.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Ubidots.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_y_Consumo.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_Dashboard.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Capturar_Datos_OpenWeather.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Introducción a la Industria 4.0.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/img_MQTT/Pasted image 20221031164344.png"
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_y_Consumo.md"
   ]
 }
