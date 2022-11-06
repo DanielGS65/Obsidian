@@ -10,6 +10,8 @@ varied_style: true
 
 ## Modificaciones Previas
 
+test
+
 Antes de empezar se añadirá una nueva función en pkg_graficos que añadirá una tercera opción para devolver la posición inicial de un avión proporcionando las coordenadas en X y la aerovía del avión, esta función servirá para actualizar la posición del avión una vez cambie de aerovía.
 
 ``` ADA

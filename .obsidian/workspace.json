@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1fdc0514a8aae3ba",
+        "id": "1ee6474186f84305",
         "type": "tabs",
         "children": [
           {
-            "id": "e14431b362b1ec1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2136c9ea5f2b091",
+            "id": "441b8da02e9cb542",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,15 +145,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c2136c9ea5f2b091",
+  "active": "441b8da02e9cb542",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Practica_5_Result.mkv",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Practica_5_Result.mkv",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Sistemas Industriales.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Memoria_Bloque_1.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Introducción.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Ubidots.md",
     "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Control_y_Consumo.md"
