@@ -54,5 +54,21 @@
       "modifiers": [],
       "key": "F9"
     }
+  ],
+  "obsidian-spaced-repetition:srs-review-flashcards": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "obsidian-spaced-repetition:srs-review-flashcards-in-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
+    }
   ]
 }

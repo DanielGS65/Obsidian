@@ -1,6 +1,6 @@
 <center style="font-weight: bold; font-size: 25 ">Introducción a los Sistemas de Tiempo Real</center>
 
-[[Práctica_2| Ir a la práctica]]
+[[Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_2| Ir a la práctica]]
 
 ```toc
 title: "## Índice"

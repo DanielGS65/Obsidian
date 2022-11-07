@@ -1,7 +1,7 @@
 <center style="font-weight: bold; font-size: 25 ">Gestión del Tiempo en STR</center>
 
 
-[Ir a la Práctica](Práctica_3)
+[Ir a la Práctica](Universidad/Ingeniería%20Informática/Sistemas%20en%20Tiempo%20Real/Prácticas/Práctica_3.md)
 
 ```toc
 title: "## Índice"

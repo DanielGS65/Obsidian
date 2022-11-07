@@ -7,6 +7,11 @@ min_depth: 2
 max_depth: 3
 varied_style: true
 ```
+<p style="font-weight: bold; font-size: 20 ">Progreso</p>
+
+- [x] Añadir Torre de Control
+- [x] Peticiones de concesión de descenso
+- [x] Descenso de aerovía
 
 ## Modificaciones Previas
 

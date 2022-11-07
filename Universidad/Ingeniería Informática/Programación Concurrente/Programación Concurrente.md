@@ -3,7 +3,9 @@
 
 [[Universidad/Ingeniería Informática/Programación Concurrente/Introducción|Introducción]]
 
-Sesión 1(Teoría): [[Conceptos Fundamentales]]
+Sesión 1(Práctica): [[Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_1|Práctica 1]]
+Sesión 2(Práctica): [[Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_2|Práctica 2]]
+Sesión 3(Teoría): [[Tema_3|Cuestiones Teóricas]] | (Prácticas) [[Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3|Práctica 3]] 
 
 
 Programas:

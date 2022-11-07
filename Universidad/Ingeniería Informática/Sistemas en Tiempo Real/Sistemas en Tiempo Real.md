@@ -7,3 +7,4 @@
 - Sesión 3: [[Introducción a los Sistemas de Tiempo Real]]
 - Sesión 4: [[Gestión del Tiempo en STR]]
 - Sesión 5 y 6: [[Comunicación y Sincronización de Tareas]]
+- Sesión 7: [[Control de Recursos]]

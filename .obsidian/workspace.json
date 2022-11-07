@@ -13,26 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
-                "mode": "source",
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "mode": "preview",
                 "source": false
               }
             }
           },
           {
-            "id": "90e4515e9d0229ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Control de Recursos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2e81f38e263930c",
+            "id": "5b963c0a612ff26d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2cf4e49674456871",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flashcards/Parcial_1",
+                "query": "tag:#flashcards/Parcial_",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,17 +170,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e2e81f38e263930c",
+  "active": "5b963c0a612ff26d",
   "lastOpenFiles": [
+    "Universidad/Ingeniería Informática/Programación Concurrente/Teoria/Tema_3.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/ADA Cheatsheet.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
-    "conflict-files-obsidian-git.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Control de Recursos.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Gestión del Tiempo en STR.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Programación Concurrente.md",
     "Universidad/Otros/Alfonso/Recuento.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Mensajería_MQTT.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Practica_5_Result.mkv",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Proyecto Enfermería/Información de Proyecto.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Sistemas Industriales.md"
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_2.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Introducción.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Conceptos Fundamentales.md"
   ]
 }

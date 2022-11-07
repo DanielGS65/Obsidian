@@ -1,6 +1,6 @@
 <center style="font-weight: bold; font-size: 25 "> Introducción al lenguaje de programación ADA</center>
 
-[[Práctica_1|Ir a la práctica]] 
+[[Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_1|Ir a la práctica]] 
 
 ```toc
 title: "## Índice"

@@ -65,6 +65,15 @@ Si la tarea solicitante tiene una sentencia la cual tenga un temporizador [^1] ,
 - _**requeue then abort**_ respeta el temporizador.
 - _**requeue**_ no respeta el temporizador.
 
+```ad-warning
+title: Atención
+
+La sentencia _**or delay**_ ==solo contabiliza el tiempo de espera, no el tiempo de respuesta==, es decir, si el **delay es de 5 segundos** y el _entry_ tarda en **aceptarla 4 segundos** y **2 segundos de ejecución**, el ==entry **NO** se cancela==.
+
+Hay una manera de realizar que una sentencia or delay "si contabilice el tiempo total" (es más un truco, no es completamente cierto) usando los requeues
+```
+
+
 ```ad-check
 title: Realizar Pregunta requeue with abort
 ```
