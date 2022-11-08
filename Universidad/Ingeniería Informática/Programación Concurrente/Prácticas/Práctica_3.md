@@ -233,7 +233,44 @@ title: Problemas
 ```ad-example
 title: Código
 color: 255, 200, 20
-``` C
+``` Java
+import java.lang.Math; // para random
+public class intento3 extends Thread {
+  // Variable Crítica
+  static int n = 1;
+  // Indicador del turno
+  static volatile int C[] = {0,0};
+  int id1; // identificador del hilo
+  int id2; // identificador del otro hilo
+  final int MAX_COUNT = 10000; // Contador Máximo
+
+  public void run() {
+    for(int i=0;i<MAX_COUNT;i++){
+        //Si no tiene acceso a la sección crítica entra en el bucle
+        C[id1] = 1;
+        while (C[((id1+1)%2)] == 1);
+        //Accede a la Sección Crítica
+        n = n+1;
+        //Cede el turno
+        C[id1] = 0;
+    }
+  }
+
+  intento3(int id) {
+	//Assignación de Id's
+    this.id1 = id;
+    this.id2 = (id == 1)? 0 : 1;
+  }
+
+  public static void main(String args[]) {
+	// Creación de los Hilos
+    Thread thr1 = new intento3(0);
+    Thread thr2 = new intento3(1);
+	//Inicio de los Hilos
+    thr1.start();
+    thr2.start();
+  }
+}
 ```
 
 ### Python
@@ -241,10 +278,73 @@ color: 255, 200, 20
 ```ad-example
 title: Código
 color: 255, 200, 20
-``` C
+``` python
+
+import threading
+#Estructura de turnos
+states = [False, False]
+
+THREADS = 2
+MAX_COUNT = 100000
+#Variable Crítica
+counter = 0
+
+#Función que restringe el acceso a la zona crítica.
+def entry_critical_section(i):
+    global states
+    states[i] = True
+    #Si no le tiene acceso a la zona crítica entra en el bucle
+    while states[(i+1)%2]:
+      pass
+#Sección Crítica
+def critical_section(i):
+    global counter
+    counter += 1
+#Salida de la función crítica
+def exit_critical_section(i):
+    global states
+    #Cede el turno
+    states[i] = False
+#Código del thread
+def thread(i):
+    for j in range(MAX_COUNT//THREADS):
+	    #Se encola para entrar
+        entry_critical_section(i)
+        #Entra en la sección crítica
+        critical_section(i)
+        #Sale de la sección Crítica
+        exit_critical_section(i)
+
+def main():
+    threads = []
+    #Creación de Hilos
+    for i in range(THREADS):
+        # Create new threads
+        t = threading.Thread(target=thread, args=(i,))
+        threads.append(t)
+        t.start() # start the thread
+
+    # Wait for all threads to complete
+    for t in threads:
+        t.join()
+
+    print("Counter value: {} Expected: {}\n".format(counter, MAX_COUNT))
+
+
+if __name__ == "__main__":
+    main()
+
 ```
 
 ### Observaciones
+
+Este intento respeta la exclusión mutua pero es muy probable que sufra de un bloqueo, por lo que el programa nunca termina. En nuestro caso, sufre un bloqueo y el programa no termina.
+
+```ad-warning
+title: Problema
+
+- El programa sufre de Interbloqueo y provoca un fallo en el programa.
+```
 
 ## Cuarto Intento: Espera infinita
 
@@ -253,7 +353,63 @@ color: 255, 200, 20
 ```ad-example
 title: Código
 color: 255, 200, 20
-``` C
+``` python
+
+import threading
+#Estructura de turnos
+states = [False, False]
+
+THREADS = 2
+MAX_COUNT = 100000
+#Variable Crítica
+counter = 0
+
+#Función que restringe el acceso a la zona crítica.
+def entry_critical_section(i):
+    global states
+    states[i] = True
+    #Si no le tiene acceso a la zona crítica entra en el bucle
+    while states[(i+1)%2]:
+      states[i] = False
+      states[i] = True
+#Sección Crítica
+def critical_section(i):
+    global counter
+    counter += 1
+#Salida de la función crítica
+def exit_critical_section(i):
+    global states
+    #Cede el turno
+    states[i] = False
+#Código del thread
+def thread(i):
+    for j in range(MAX_COUNT//THREADS):
+	    #Se encola para entrar
+        entry_critical_section(i)
+        #Entra en la sección crítica
+        critical_section(i)
+        #Sale de la sección Crítica
+        exit_critical_section(i)
+
+def main():
+    threads = []
+    #Creación de Hilos
+    for i in range(THREADS):
+        # Create new threads
+        t = threading.Thread(target=thread, args=(i,))
+        threads.append(t)
+        t.start() # start the thread
+
+    # Wait for all threads to complete
+    for t in threads:
+        t.join()
+
+    print("Counter value: {} Expected: {}\n".format(counter, MAX_COUNT))
+
+
+if __name__ == "__main__":
+    main()
+
 ```
 
 ### Observaciones
