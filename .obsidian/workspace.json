@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md"
+                "file": "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md"
               }
             }
           },
@@ -144,12 +144,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9f4396544140c5ee",
+  "active": "0a3472ac143339af",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
-    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Memoria_Bloque_1.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_2.md",
     "Universidad/Otros/Alfonso/Recuento.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_3.md",
+    "Universidad/Ingeniería Informática/Sistemas Industriales/Memorias Pracicas/Memoria_Bloque_1.md",
     "Universidad/Ingeniería Informática/Programación Concurrente/Teoria/Tema_3.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/ADA Cheatsheet.md",

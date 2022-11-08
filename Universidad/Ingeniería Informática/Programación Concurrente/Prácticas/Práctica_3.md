@@ -55,13 +55,13 @@ void *codigo_del_hilo (void *id){
   int k;
   for(k=0; k<100; k++){
     // protocolo de entrada
-    // Si es el turno del proceso se mete en el while
+    // Si no es el turno del proceso se mete en el while hasta que sea su turno
     while(turno == j);
     // Sección crítica
     I = (I + 1)%10;
     printf("En hilo %d, I=%d\n", i,I);
     // protocolo salida
-    //Cuando le quitan el turno pide el turno
+    //Cede el turno al otro proceso
     turno = j;
   }
   pthread_exit (id);
@@ -109,6 +109,62 @@ title: Problemas
 title: Código
 color: 255, 200, 20
 ``` C
+/**
+   $hilos
+   Compilación: cc -o hilos hilos.c -lpthread
+**/
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+//Variables Globales:
+//Valor Crítico
+int I = 0;
+//Turno de los procesos
+int C[] = {0,0};
+
+
+void *codigo_del_hilo (void *id){
+//Id del proceso
+  int id1 = *(int *)id;
+//Id contraria del proceso
+  int id2 = (id1 == 1)? 2 : 1;
+  for(;;){
+    while(C[id2] == 1);
+        C[id1] = 1;
+        //Pausa
+        sleep(0.5);
+        //Cuando sea su turno, modifica la variable
+        I = I + 1;
+        printf("En el hilo %d, I= %d",id1, I);
+        //Libera el turno
+        C[id1] = 0;
+  }
+  pthread_exit (id);
+}
+int main(){
+  int h;pthread_t hilos[2];
+  int id[2]={1,2};
+  int error;
+  int *salida;
+  //Creación de los hilos
+  for(h=0; h<2; h++){
+    error = pthread_create( &hilos[h], NULL, codigo_del_hilo, &id[h]);
+    if (error){
+      fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+      exit(-1);
+    }
+  }
+  // Union de los Hilos
+  for(h =0; h < 2; h++){
+    error = pthread_join(hilos[h], (void **)&salida);
+    if (error)
+      fprintf (stderr, "Error: %d: %s\n", error, strerror (error));
+    else
+      printf ("Hilo %d terminado\n", *salida);
+  }
+}
 ```
 
 ### Java
@@ -128,12 +184,16 @@ public class Intento2 extends Thread {
   public void run() {
     try {
       for(;;){
+	    //Si no es turno, pide el turno
         while(C[id2] == 1);
         C[id1] = 1;
+        //Pausa
         sleep((long)(100*Math.random()));
+        //Cuando sea su turno, modifica la variable
         n = n + 1;
         System.out.println("En hilo "+id1+", n = "+n);
-        C[id1] = 0;;
+        //Libera su el turno
+        C[id1] = 0;
       }
     }
     catch( InterruptedException e ){return;}
@@ -157,6 +217,14 @@ public class Intento2 extends Thread {
 ```
 
 ### Observaciones
+
+Aunque podría parecer que este también cumple la exclusión mutua esto solo sucede porque tenemos un '_sleep_' que impide en la mayoría de intentos el acceso simultaneo de la variable crítica, pero si quitamos el '_sleep_' podemos observar que si se rompe la exclusión mutua.
+
+```ad-warning
+title: Problemas
+
+- No garantiza la exclusión mutua.
+```
 
 ## Tercer Intento: Posible interbloqueo 
 
