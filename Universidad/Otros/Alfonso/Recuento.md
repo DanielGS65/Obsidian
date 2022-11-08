@@ -15,9 +15,10 @@
 	- 17-10-2022 -> 11:15
 	- 24-10-2022 -> 11:40
 	- 25-10-2022 -> 9:15
-	- 07-10-2022 -> 11:30
+	- 07-11-2022 -> 11:30
+	- 08-11-2022 -> 11:20
 
-Minimización: 4 hora 45 Minutos
+Minimización: 5 hora 05 Minutos
 
 Tiempo Minimizado aplicando la técnica de la ausencia**
 
@@ -39,12 +40,14 @@ Minimización: 22 Horas
 
 ```chart
 type: line
-labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07]
+labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07,08]
 series:
   - title: Minimización
-    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270]
+    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20]
   - title: Horario
-	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480]
+	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,360]
+  - title: Enfermo
+	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120]
 tension: 0.2
 width: 80%
 labelColors: false
@@ -52,9 +55,9 @@ fill: true
 beginAtZero: true
 ```
 
-Minimización Total: **26 Horas 15 Minutos**
+Minimización Total: **27 Horas 05 Minutos**
 
-Horas totales: **118 Horas**
+Horas totales: **126 Horas**
 
 Porcentaje de minimización: **22.25%**
 
@@ -64,4 +67,3 @@ Porcentaje de minimización: **22.25%**
 -Grego Apuesta Tres cuatriños y un sándwich de Jamón de york a que no viene nunca más a Sistemas Industrializados Teórica (no cuenta si el sujeto perece de manera espontanea por una contusión muy fuerte en la cabeza por un sujeto más misterioso aun si cabe) UwU
 
 Odds: 1-1
-
