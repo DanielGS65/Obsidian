@@ -279,8 +279,8 @@ public class intento3 extends Thread {
 title: Código
 color: 255, 200, 20
 ``` python
-
 import threading
+
 #Estructura de turnos
 states = [False, False]
 
@@ -354,8 +354,8 @@ title: Problema
 title: Código
 color: 255, 200, 20
 ``` python
-
 import threading
+
 #Estructura de turnos
 states = [False, False]
 
@@ -413,3 +413,11 @@ if __name__ == "__main__":
 ```
 
 ### Observaciones
+
+El cuarto intento si que garantiza la exclusión mutua y nos da el resultado correcto, el único problema es que podemos encontrarnos con un problema de Espera Infinita.
+
+```ad-warning
+title:Problema
+
+- No nos garantiza que se acceda a la sección crítica en un tiempo finito, lo que implica que algun proceso puede esperar infinitamente para acceder a la sección crítica.
+```
