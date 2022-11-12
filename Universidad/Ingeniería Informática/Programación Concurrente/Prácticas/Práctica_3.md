@@ -226,6 +226,14 @@ title: Problemas
 - No garantiza la exclusión mutua.
 ```
 
+```ad-question
+title: Pregunta
+
+Observa el atributo _**volatile**_ para la variable turno, ¿qué ocurrre si lo eliminas?
+```
+
+Si se elimina el atributo _**Volatile**_ de la variable turno, al ejecutar el código, solo actua uno de los dos hilos. Esto ocurre porque añadiendo el atributo **_volatile_** hacemos que la variable se guarde en memoria principal en vez de en el cache, haciendo que se lea la ultima modificación de la variable de manera directa. Si se elimina se leerá del cache, pudiendo dar problemas.
+
 ## Tercer Intento: Posible interbloqueo 
 
 ### Java
@@ -421,3 +429,5 @@ title:Problema
 
 - No nos garantiza que se acceda a la sección crítica en un tiempo finito, lo que implica que algun proceso puede esperar infinitamente para acceder a la sección crítica.
 ```
+
+

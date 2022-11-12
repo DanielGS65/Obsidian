@@ -180,13 +180,38 @@ Primero deberemos comprobar que hay debajo del avión, además de realizar dos f
 ``` ADA
 -- pkg_protected.ads
 ...
+procedure lower_airway(ptr_avion: in out T_RecordAvion; endTask: out Boolean);
+...
+protected type PlaneQueue is
+...
 function checkCurrentPos(pos: in T_CoordenadaX) return Boolean;
 ...
-procedure landing(ptr_avion: Ptr_T_RecordAvion);
-procedure changeAirway(ptr_avion: Ptr_T_RecordAvion);
+procedure leaveAirway(ptr_avion: T_RecordAvion);
+procedure changeAirway(ptr_avion: T_RecordAvion);
 ...
+end PlaneQueue;
+
 
 -- pkg_protected.adb
+...
+procedure lower_airway(ptr_avion: in out T_RecordAvion; endTask: out Boolean) is
+begin
+  protectedArray(ptr_avion.aereovia).leaveAirway(ptr_avion);
+  if(ptr_avion.aereovia < NUM_AEREOVIAS-1) then
+	 ptr_avion.aereovia := ptr_avion.aereovia + 1;
+	 ptr_avion.velocidad.X := ptr_avion.velocidad.X * (-1);
+	 ptr_avion.pos := Pos_Inicio(ptr_avion.pos.x,ptr_avion.aereovia);
+	 protectedArray(ptr_avion.aereovia).changeAirway(ptr_avion);
+	 endTask := false;
+  else
+	 protectedArray(ptr_avion.aereovia + 1).decreaseCont;
+	 Put_line("Plane (" & T_IdAvion'Image(ptr_avion.id) & " ," & T_Rango_AereoVia'Image(ptr_avion.aereovia_inicial) & " ) Has Landed");
+	 endTask := true;
+  end if;
+end lower_airway;
+
+...
+protected body type PlaneQueue is
 ...
 function checkCurrentPos(pos: in T_CoordenadaX) return Boolean is
   A,B,C,D,E : Boolean;
@@ -204,19 +229,20 @@ begin
  end if;
 end checkCurrentPos;
 ...
-procedure landing(ptr_avion: Ptr_T_RecordAvion) is
+procedure leaveAirway(ptr_avion: T_RecordAvion) is
 begin
  Desaparece(ptr_avion.all);
  aeroregion(Posicion_Rejilla(ptr_avion.pos.X)) := False;
  decreaseCont;
-end landing;
+end leaveAirway;
 
-procedure changeAirway(ptr_avion: Ptr_T_RecordAvion) is
+procedure changeAirway(ptr_avion: T_RecordAvion) is
 begin
  Aparece(ptr_avion.all);
  aeroregion(Posicion_Rejilla(ptr_avion.pos.X)) := True;
 end changeAirway;
 ...
+end PlaneQueue;
 ```
 
 Realizadas estas funciones solo nos quedará modificar '_pkg_tareaAvion_' para que responda a la contestación de la torre de control:
@@ -228,6 +254,7 @@ package body pkg_TareaAvion is
 
    task body T_Avion is
       response: Boolean;
+      endTask: Boolean := false;
       endLoop: Boolean := false;
       currentColor : T_ColorAvion;
    begin
@@ -248,19 +275,7 @@ package body pkg_TareaAvion is
                   ptr_avion.color := currentColor;
                   if(protectedArray(ptr_avion.aereovia + 1).checkCurrentPos(ptr_avion.pos.X)) then
                      endLoop := true;
-                     protectedArray(ptr_avion.aereovia).landing(ptr_avion);
-                     if(ptr_avion.aereovia < NUM_AEREOVIAS-1) then
-                        ptr_avion.aereovia := ptr_avion.aereovia + 1;
-                        ptr_avion.velocidad.X := ptr_avion.velocidad.X * (-1);
-                        ptr_avion.pos := Pos_Inicio(ptr_avion.pos.x,ptr_avion.aereovia);
-                        protectedArray(ptr_avion.aereovia).changeAirway(ptr_avion);
-                  
-                     else
-                        protectedArray(ptr_avion.aereovia + 1).decreaseCont;
-                        Put_line("Plane (" & T_IdAvion'Image(ptr_avion.id) & " ," & T_Rango_AereoVia'Image(ptr_avion.aereovia_inicial) & " ) Has Landed");
-                        delay duration(100000);
-                     end if;
-                  
+                     lower_airway(ptr_avion.all,endTask);
                   else
                      ptr_avion.color := Yellow;
                      protectedArray(ptr_avion.aereovia).movePlane(ptr_avion);
@@ -270,8 +285,8 @@ package body pkg_TareaAvion is
                   exit when endLoop;
                end loop;
             
-            endLoop := false;
-         end if;
+               endLoop := false;
+            end if;
          then abort  
             loop
                protectedArray(ptr_avion.aereovia).movePlane(ptr_avion);
@@ -279,7 +294,7 @@ package body pkg_TareaAvion is
             end loop;
          end select;
          
-         
+         exit when endTask;
       end loop;
       
    exception

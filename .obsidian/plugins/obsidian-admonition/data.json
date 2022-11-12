@@ -1,5 +1,19 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "statement": {
+      "type": "statement",
+      "color": "100, 240, 110",
+      "icon": {
+        "name": "bars",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Enunciado",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "9.0.5",
