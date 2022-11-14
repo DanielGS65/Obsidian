@@ -1,5 +1,7 @@
 <center style="font-weight: bold; font-size: 25 ">Control de Recursos</center>
 
+[[Práctica_6|Ir a la práctica]]
+
 ```toc
 title: "## Índice"
 style: number 
