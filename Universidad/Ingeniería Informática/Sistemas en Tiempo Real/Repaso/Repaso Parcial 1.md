@@ -115,7 +115,7 @@ Nombra los **Tipos de Retardos** en un **Sistema de Tiempo Real**.
 ?
 **Relativo** => Ejecución se suspende durante un intervalo de tiempo relativo al instante actual
 **Absoluto** => Ejecución se suspende hasta que llegue a un instante determinado de tiempo absoluto
-<!--SR:!2023-05-04,165,296!2022-10-12,4,276-->
+<!--SR:!2023-05-04,165,296-->
 
 %%Práctica%%
 

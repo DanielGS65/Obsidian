@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
+                "file": "Universidad/Otros/Alfonso/Recuento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md"
+                "file": "Universidad/Otros/Alfonso/Recuento.md"
               }
             }
           },
@@ -170,11 +169,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d32ae3e5afdba56",
+  "active": "0a3472ac143339af",
   "lastOpenFiles": [
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/ADA Cheatsheet.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 2.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Repaso/Repaso Parcial 1.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
     "Universidad/Otros/Alfonso/Recuento.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6.md",

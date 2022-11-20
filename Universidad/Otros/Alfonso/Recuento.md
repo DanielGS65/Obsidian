@@ -48,7 +48,7 @@ series:
   - title: Minimización
     data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20,140,15]
   - title: Horario
-	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,480, 360,480]
+	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,360, 360,480]
   - title: Enfermo
 	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,0,0]
 tension: 0.2
@@ -60,9 +60,9 @@ beginAtZero: true
 
 Minimización Total: **29 Horas 40 Minutos**
 
-Horas totales: **140 Horas**
+Horas totales: **128 Horas**
 
-Porcentaje de minimización: **22.25%**
+Porcentaje de minimización: **23.18%**
 
 
 ## APUESTAS
