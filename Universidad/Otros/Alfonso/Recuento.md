@@ -2,7 +2,7 @@
 
 **Tiempo minimizado usando la técnica del retraso**
 
-- Sin retraso => 3 | Retraso => 15
+- Sin retraso => 4 | Retraso => 15
 
 	- 12-09-2022 -> 9:30
 	- 19-09-2022 -> 9:15
@@ -24,7 +24,7 @@ Minimización: 5 hora 40 Minutos
 
 Tiempo Minimizado aplicando la técnica de la ausencia**
 
- - No Falta => 6 | Falta => 9
+ - No Falta => 10 | Falta => 9
 	- 19-09-2022 -> 17:00
 	- 26-09-2022 -> 17:00
 	- 03-10-2022 -> 9:00 - 17:00
