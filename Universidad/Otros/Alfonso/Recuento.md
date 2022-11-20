@@ -2,7 +2,7 @@
 
 **Tiempo minimizado usando la técnica del retraso**
 
-- Sin retraso => 3 | Retraso => 13
+- Sin retraso => 3 | Retraso => 15
 
 	- 12-09-2022 -> 9:30
 	- 19-09-2022 -> 9:15
@@ -18,8 +18,9 @@
 	- 07-11-2022 -> 11:30
 	- 08-11-2022 -> 11:20
 	- 14-11-2022-> 11:20
+	- 15-11-2022-> 9:15
 
-Minimización: 5 hora 25 Minutos
+Minimización: 5 hora 40 Minutos
 
 Tiempo Minimizado aplicando la técnica de la ausencia**
 
@@ -42,14 +43,14 @@ Minimización: 24 Horas
 
 ```chart
 type: line
-labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07,08,14]
+labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07,08,14,15]
 series:
   - title: Minimización
-    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20,140]
+    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20,140,15]
   - title: Horario
-	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,480, 480]
+	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,480, 360,480]
   - title: Enfermo
-	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,0]
+	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,0,0]
 tension: 0.2
 width: 80%
 labelColors: false
@@ -57,15 +58,15 @@ fill: true
 beginAtZero: true
 ```
 
-Minimización Total: **29 Horas 25 Minutos**
+Minimización Total: **29 Horas 40 Minutos**
 
-Horas totales: **134 Horas**
+Horas totales: **140 Horas**
 
 Porcentaje de minimización: **22.25%**
 
 
 ## APUESTAS
 
--Grego Apuesta Tres cuatriños ,un sándwich de Jamón de york  y un Bocata Chopped a que no viene nunca más a Sistemas Industrializados Teórica (no cuenta si el sujeto perece de manera espontanea por una contusión muy fuerte en la cabeza por un sujeto más misterioso aun si cabe) UwU
+- Grego Apuesta Tres cuatriños ,un sándwich de Jamón de york  y un Bocata Chopped a que no viene nunca más a Sistemas Industrializados Teórica (no cuenta si el sujeto perece de manera espontanea por una contusión muy fuerte en la cabeza por un sujeto más misterioso aun si cabe) UwU
 
 Odds: 1-1

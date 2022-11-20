@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
-                "mode": "source",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Otros/Alfonso/Recuento.md"
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4.md"
               }
             }
           },
@@ -160,15 +160,15 @@
   },
   "active": "1914ab33ee9d60a8",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6.md",
     "Universidad/Otros/Alfonso/Recuento.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Control de Recursos.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Sistemas en Tiempo Real.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Planificación de Tareas.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Control de Recursos.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Gestión del Tiempo en STR.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Comunicación y Sincronización de Tareas.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción a los Sistemas de Tiempo Real.md",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_5.md",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6_Result.mkv"
   ]
 }

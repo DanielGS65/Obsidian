@@ -127,7 +127,7 @@ Llama a _switchPosition_ y ademas mueve el avión, esto se hace asi para evitar 
 ```ad-info
 title: takeOff
 
-Es un entry que primero comprueba si un avión puede aparecer (checkTakeOff) y desupues le hace aparecer.
+Es un entry que primero comprueba si un avión puede aparecer (checkTakeOff) y despues le hace aparecer.
 ```
 
 ```ad-info
