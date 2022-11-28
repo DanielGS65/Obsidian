@@ -148,7 +148,7 @@ Se trata de obtener el peor tiempo de respuesta de cada tarea observando el cron
 
 ```ad-tip
 title: Conceptos a estudiar
-- **Instante crítico** : Máxima carga del procesador (Suele ser el inicio)
+- **Instante crítico** : Máxima carga del procesador (En las propiedades fijas es el instante inicial de la tarea con el mayor periodo)
 - **Hiperperiodo** : mínimo común múltiplo de los periodos de activación de todas las tareas (También es cuando todas las tareas se vuelven a activar al mismo tiempo)
 ```
 
