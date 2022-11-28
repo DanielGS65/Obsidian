@@ -99,6 +99,11 @@ title: Repaso
 - y es diferente del factor de carga: $ch = \frac{C}{D}$
 ```
 
+```ad-warning
+title: Atención
+Siempre se tiene que dar que $D_i = T_i$
+```
+
 #### Utilización para Tareas con Prioridades Fijas
 
 ```ad-tip
