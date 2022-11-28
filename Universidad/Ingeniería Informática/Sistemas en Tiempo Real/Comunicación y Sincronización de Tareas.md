@@ -1,6 +1,6 @@
 <center style="font-weight: bold; font-size: 25 ">Comunicación y Sincronización de Tareas</center>
 
-[[Práctica_4|Ir a la práctica(Sesión 5)]]
+[[Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_4|Ir a la práctica(Sesión 5)]]
 [[Práctica_5|Ir a la práctica(Sesión 6)]]
 
 ```toc

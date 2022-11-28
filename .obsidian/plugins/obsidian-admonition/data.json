@@ -12,6 +12,19 @@
       "injectColor": true,
       "noTitle": false,
       "copy": false
+    },
+    "code": {
+      "type": "code",
+      "color": "255, 200, 0",
+      "icon": {
+        "name": "terminal",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Código",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
     }
   },
   "syntaxHighlight": false,
