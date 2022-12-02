@@ -1,5 +1,6 @@
 <center style="font-weight: bold; font-size: 25 ">PLANIFICACIÓN DE TAREAS PERIÓDICAS</center>
 
+[[Práctica_7|Ir a la Práctica]]
 ```toc
 title: "## Índice"
 style: number 
