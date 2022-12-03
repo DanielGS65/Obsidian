@@ -1,4 +1,4 @@
-<center style="font-weight: bold; font-size: 25 ">Práctica 6</center>
+<center style="font-weight: bold; font-size: 25 ">Práctica 7</center>
 
 ```toc
 title: "## Índice"
@@ -174,3 +174,85 @@ La única manera de calcular los peores tiempos de respuesta en un sistema con P
 ![[Pasted image 20221202172326.png]]
 ```
 
+## Ejercicio 6
+
+```ad-statement
+Dado el siguiente conjunto de tareas:
+
+![[Pasted image 20221203113500.png|center|200]]
+```
+
+```ad-section
+title: Apartado a)
+
+Teniendo en cuenta un planificador de prioridades fijas, ¿qué test utilizarías para verificar la planificabilidad de dicho conjunto, el test de factores de utilización o el test de factores de carga?  
+
+Justifica tu elección y aplícalo.
+```
+
+Se tendría que aplicar el Test de Factores de Carga, ya que este mes valido cuando la deadline de la tarea  es menor o igual al periodo de esta ($D_i <= T_i$).
+
+El Test de Factores de Utilización pide que la Deadline de la tarea sea igual al periodo ($D_i = T_i$) por lo que no lo podemos usar en este caso.
+
+Para aplicar las prioridades se usará el planificador DM
+
+```ad-paragraph
+
+![[Inkodo-1232022_103452_AM.png]]
+
+```
+
+```ad-section
+title: Apartado b)
+
+Dibujar el cronograma que demuestra la planificabilidad del sistema según la asignación de prioridades del apartado anterior.
+```
+
+
+```ad-paragraph
+![[Inkodo-1232022_105750_AM.png]]
+```
+
+```ad-section
+title: Apartado c)
+
+A partir del cronograma realizado, indicar los tiempos de respuesta en el peor caso de cada tarea.
+```
+
+- Tarea 1 -> 3 Instantes
+- Tarea 2 -> 6 Instantes
+- Terea 3 -> 9 Instantes
+- Tarea 4 -> 20 Instantes
+
+## Ejercicio 7
+
+```ad-statement
+
+Dado el siguiente conjunto de tareas:
+
+![[Inkodo-1232022_110728_AM.png|center|200]]
+```
+
+```ad-section
+title: Apartado a)
+
+Verificar la planificabilidad de dicho conjunto bajo un planificador EDF utilizando el test de factores de carga. Después de aplicar el test ¿puedes afirmar que el sistema es o no planificable?
+```
+
+```ad-paragraph
+
+![[Inkodo-1232022_110848_AM.png]]
+```
+
+No podemos afirmar si el sistema es realmente panificable, ya que este test solo nos indica si es suficiente, por lo que habría que realizar una prueba mas rigurosa, como un cronograma.
+
+```ad-section
+title: Apartado b)
+
+Dibujar el cronograma que demuestre la planificabilidad o no del sistema usando el algoritmo EDF.
+```
+
+```ad-paragraph
+
+![[Inkodo-1232022_113217_AM.png]]
+```
