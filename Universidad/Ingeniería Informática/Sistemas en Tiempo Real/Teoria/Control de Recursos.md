@@ -1,6 +1,6 @@
 <center style="font-weight: bold; font-size: 25 ">Control de Recursos</center>
 
-[[Práctica_6|Ir a la práctica]]
+[[Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6|Ir a la práctica]]
 
 ```toc
 title: "## Índice"

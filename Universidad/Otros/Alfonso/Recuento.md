@@ -25,7 +25,7 @@ Minimización: 5 hora 40 Minutos
 
 **Tiempo Minimizado aplicando la técnica de la ausencia**
 
- - No Falta => 10 | Falta => 11
+ - No Falta => 10 | Falta => 12
 	- 19-09-2022 -> 17:00
 	- 26-09-2022 -> 17:00
 	- 03-10-2022 -> 9:00 - 17:00
@@ -37,7 +37,9 @@ Minimización: 5 hora 40 Minutos
 	- 14-11-2022 -> 9:00
 	- 28-11-2022 -> 9:00 - 17:00
 	- 29-11-2022 -> 9:00 - 17:00
-Minimización: 32 Horas
+	- 05-12-2022 -> 9:00 - 11:00 - 15:00 - 17:00
+	- 
+Minimización: 40 Horas
 
 -----------------------------------------
 
@@ -45,14 +47,14 @@ Minimización: 32 Horas
 
 ```chart
 type: line
-labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07,08,14,15,21,22,28,29]
+labels: [12,13,19,20,26,27,03,04,10,11,17,18,24,25,31,01,07,08,14,15,21,22,28,29,5]
 series:
   - title: Minimización
-    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20,140,15,0,0,280,240]
+    data: [30,0,135,20,150,35,240,30,135,15,255,0,160,15,240,0,270,20,140,15,0,0,280,240,480]
   - title: Horario
-	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,360, 360,480,120,450,480,480]
+	data: [480,360,480,480,480,120,480,480,480,480, 480, 480,480,480,240,0,480,360, 360,480,120,450,480,480,480]
   - title: Enfermo
-	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,0,0,120,30,0,0]
+	data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,0,0,120,30,0,0,0]
 tension: 0.2
 width: 80%
 labelColors: false
@@ -60,11 +62,11 @@ fill: true
 beginAtZero: true
 ```
 
-Minimización Total: **37 Horas 40 Minutos**
+Minimización Total: **45 Horas 40 Minutos**
 
-Horas totales: **146 Horas**
+Horas totales: **163 Horas 30 Minutos**
 
-Porcentaje de minimización: **23.18%**
+Porcentaje de minimización: **27,93%**
 
 
 ## APUESTAS

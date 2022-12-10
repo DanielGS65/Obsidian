@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4a2119cd4809899d",
+        "id": "02aeb2761b8ae77f",
         "type": "tabs",
         "children": [
           {
-            "id": "79a05734fd4f0ffa",
+            "id": "88cfd17a10e82bb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
-                "mode": "preview",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md"
+                "file": "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md"
               }
             }
           },
@@ -145,17 +145,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "79a05734fd4f0ffa",
+  "active": "88cfd17a10e82bb4",
   "lastOpenFiles": [
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221203113500.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Inkodo-1232022_103452_AM.png",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_8/Inkodo-1292022_54428_PM.png",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_5.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Teoria/Planificación de Tareas Periódicas.md",
+    "Universidad/Ingeniería Informática/Programación Concurrente/Prácticas/Práctica_6.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_8/Inkodo-1292022_41806_PM.png",
     "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
-    "Pasted image 20221203111954.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Inkodo-1222022_32531_PM.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221128123029.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221128124650.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221128152327.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221128163919.png",
-    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_7/Pasted image 20221128164302.png"
+    "Universidad/Otros/Alfonso/Recuento.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Teoria/Planificación de Tareas Aperiodicas.md",
+    "Universidad/Ingeniería Informática/Sistemas en Tiempo Real/Introducción.md"
   ]
 }
