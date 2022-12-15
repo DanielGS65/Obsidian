@@ -1,4 +1,4 @@
-k<center style="font-weight: bold; font-size: 25 ">Práctica 8</center>
+<center style="font-weight: bold; font-size: 25 ">Práctica 8</center>
 
 
 ```toc
@@ -136,7 +136,9 @@ de forma que garantice la planificabilidad de las tareas periódicas
 ```
 
 ```ad-paragraph
-![[Inkodo-12112022_43605_PM.png]]
+
+![[Inkodo-12122022_101225_AM.png]]
+
 ```
 
 ## Ejercicio 4
