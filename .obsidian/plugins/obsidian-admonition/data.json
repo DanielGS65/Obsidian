@@ -40,7 +40,7 @@
     },
     "paragraph": {
       "type": "paragraph",
-      "color": "0, 0, 0",
+      "color": "255, 255, 255",
       "icon": {
         "name": "ad",
         "type": "font-awesome"
@@ -54,7 +54,7 @@
   },
   "syntaxHighlight": false,
   "copyButton": false,
-  "version": "9.0.5",
+  "version": "9.2.1",
   "autoCollapse": false,
   "defaultCollapseType": "open",
   "injectColor": true,

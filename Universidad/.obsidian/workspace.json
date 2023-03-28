@@ -1,0 +1,149 @@
+{
+  "main": {
+    "id": "869eb801d9552a59",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1c3d1a5f737f806",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99ccb7007bd8517f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b542f4b24a5bee73",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad50a1f06605523e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8228f808b09ffafd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3bc218d4dd990c1d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d28480ad46fa582",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "96a079b157ada015",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ef75b027ea28982",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b894eae58726cc8f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd916fa29b84cddb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a81858276fadd145",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "24cc76ebda8b10a2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_7.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "99ccb7007bd8517f",
+  "lastOpenFiles": [
+    "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_6_Result.mkv",
+    "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_8.md",
+    "Ingeniería Informática/Sistemas en Tiempo Real/Prácticas/Práctica_9.md",
+    "Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_9/Inkodo-12162022_60819_PM.png",
+    "Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_9/Inkodo-12162022_61423_PM.png",
+    "Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_9/Inkodo-12162022_62818_PM.png",
+    "Ingeniería Informática/Sistemas en Tiempo Real/img/Práctica_9/Inkodo-12162022_63226_PM.png"
+  ]
+}

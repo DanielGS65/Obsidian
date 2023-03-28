@@ -3,6 +3,8 @@
   "theme": "obsidian",
   "baseFontSize": 16,
   "enabledCssSnippets": [
-    "center"
-  ]
+    "center",
+    "multicolumn"
+  ],
+  "cssTheme": "Cybertron"
 }
